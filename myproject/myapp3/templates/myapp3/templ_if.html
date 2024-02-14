@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Template with branching</title>
+</head>
+<body>
+  {% if message %}
+  <p>A message has been recieved: <br> {{ message }}</p>
+  {% endif %}
+
+  <p> Total amount of messages {{ number }}
+  {% if number == 1 %}
+    post
+  {% elif number >= 2 and number <= 4 %}
+    posts
+  {% endif %}
+  </p>
+</body>
+</html>
+
